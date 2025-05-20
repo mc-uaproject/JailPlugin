@@ -88,7 +88,7 @@ public class JailCommand implements CommandExecutor {
             online.setGameMode(GameMode.ADVENTURE);
         }
 
-        sender.sendMessage("§aPlayer " + args[0] + " jailed for " + days + " days.");
+        sender.sendMessage("§aГравець " + args[0] + " ув'язнений на " + days + " днів.");
         return true;
     }
 }

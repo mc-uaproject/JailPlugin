@@ -77,7 +77,6 @@ public class JailPlugin extends JavaPlugin implements Listener {
         }
     }
 
-    // Prevent jailed players dealing damage
     @EventHandler(priority = EventPriority.HIGH)
     public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
         if (event.getDamager() instanceof Player) {
