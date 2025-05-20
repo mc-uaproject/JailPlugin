@@ -1,0 +1,17 @@
+name: jail
+main: com.illia.jail.JailPlugin
+version: 1.0
+api-version: 1.21
+commands:
+  jail:
+    description: Imprison a player for specified days at given coordinates.
+    usage: /jail <player> <days> <x> <y> <z>
+    permission: jail.use
+  unjail:
+    description: Release a player from jail.
+    usage: /unjail <player>
+    permission: jail.use
+permissions:
+  jail.use:
+    description: Allows use of /jail command
+    default: op
